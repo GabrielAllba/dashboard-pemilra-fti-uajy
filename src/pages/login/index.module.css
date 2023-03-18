@@ -46,3 +46,25 @@
 .welcome_to{
     color: grey;
 }
+.image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.image{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.sema{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.himaforka{
+    width: 3rem;
+    height: 3rem;
+}
+.himsi{
+    width: 4.2rem;
+    height: 4.2rem;
+}

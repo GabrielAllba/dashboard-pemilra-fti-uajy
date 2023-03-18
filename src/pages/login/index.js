@@ -7,9 +7,8 @@ import Button from "@mui/material/Button";
 import Gradient from 'rgt'
 
 import React from "react";
+import Image from "next/image";
 import classes from "./index.module.css";
-
-
 
 export default function Login(){
     return (
@@ -26,13 +25,39 @@ export default function Login(){
         <Box sx={{ minWidth: 275 }}>
           <Card variant="outlined">
             <CardContent style={{ padding: "2rem" }}>
+              <div className={classes.image_container}>
+                <Image
+                  className={classes.image + " " +classes.sema}
+                  src="/images/sema.png"
+                  alt="Logo SEMA FTI UAJY"
+                  width={1000}
+                  height={1000}
+                />
+                <Image
+                  className={classes.image}
+                  src="/images/hmti.png"
+                  alt="Logo SEMA FTI UAJY"
+                  width={1000}
+                  height={1000}
+                />
+                <Image
+                  className={classes.image + " " + classes.himaforka}
+                  src="/images/himaforka.png"
+                  alt="Logo SEMA FTI UAJY"
+                  width={1000}
+                  height={1000}
+                />
+                <Image
+                  className={classes.image + " " + classes.himsi}
+                  src="/images/himsi.png"
+                  alt="Logo SEMA FTI UAJY"
+                  width={1000}
+                  height={1000}
+                />
+              </div>
               <p className={classes.welcome_to}>Welcome To</p>
               <h2 className={classes.title}>
-                <Gradient
-                  dir="left-to-right"
-                  from="#DE631C"
-                  to="#E03221"
-                >
+                <Gradient dir="left-to-right" from="#DE631C" to="#E03221">
                   Pemilra FTI UAJY
                 </Gradient>
               </h2>
