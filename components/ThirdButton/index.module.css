@@ -1,5 +1,6 @@
 .button{
-    background: #ffd7d4;
+    background: #E6EAF5;
+    border: 1.1px solid #C0C5F5;
     display: flex;
     justify-content: center;
     align-items: center;

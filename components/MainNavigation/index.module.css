@@ -1,0 +1,34 @@
+.container{
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background: #fafafa;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 100%;
+    z-index: 1;
+}
+
+.main_page_container{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+.m_5{
+    margin: .5rem;
+}
+
+.h2{
+    font-size: 1rem;
+    font-family: 'Inter-Bold';
+}
+
+.role{
+    padding-right: .5rem;
+    font-family: 'Inter-Regular';
+}
+.role_detail{
+    font-size: .8rem;
+    color: #7683e3;
+    font-family: 'Inter-Bold';
+}

@@ -10,7 +10,7 @@ import React from "react";
 import Image from "next/image";
 import classes from "./index.module.css";
 
-export default function Login(){
+const Login = () => {
     return (
       <Container
         maxWidth="lg"
@@ -40,7 +40,7 @@ export default function Login(){
                 className={classes.form}
               >
                 <div className={classes.form_label}>
-                  <label className={classes.label} for="email">
+                  <label className={classes.label} htmlFor="email">
                     <h2 className={classes.label_inner}>Email</h2>
                   </label>
                   <input
@@ -52,7 +52,7 @@ export default function Login(){
                   />
                 </div>
                 <div className={classes.form_label}>
-                  <label className={classes.label} for="password">
+                  <label className={classes.label} htmlFor="password">
                     <h2 className={classes.label_inner}>Password</h2>
                   </label>
                   <input
@@ -75,3 +75,5 @@ export default function Login(){
       </Container>
     );
 }
+
+export default Login

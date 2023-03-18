@@ -1,0 +1,12 @@
+.main_content{
+    display: flex;
+}
+
+.main_main_content{
+    padding: 2rem;
+    width: 100%;
+    position: relative;
+    
+    margin-top: 4rem;
+    
+}
