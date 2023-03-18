@@ -12,7 +12,7 @@
 .main_page_container{
     display: flex;
     align-items: center;
-    padding: .5rem;
+    padding: 1rem;
 }
 .m_5{
     margin: .5rem;
