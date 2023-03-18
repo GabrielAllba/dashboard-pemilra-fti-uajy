@@ -13,7 +13,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main>
-          <p>Dashboard | Pemilra FTI UAJY</p>
+          
         </main>
       </Layout>
     </>

@@ -12,14 +12,16 @@
 .label{
     margin: .5rem 0;
 }
-
+.label_inner{
+    font-size: 1rem;
+    font-family: 'Inter-Bold';
+}
 .input{
     outline: none;
     border-radius: 3px;
-    border: none;
-    background-color: rgb(246, 246, 246);
+    border: 1px solid rgb(207, 207, 207);
     height: 1.5rem;
-    padding-left: .5rem;
+    padding: .5rem;
 }
 
 .submit{
@@ -28,10 +30,10 @@
     color: white;
     outline: none;
     border: none;
-    padding: .5rem;
+    padding: .8rem .5rem;
     border-radius: 3px;
     margin-top: 2rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 2px 16px 4px;
 }
 .title{
     font-family: 'Inter-Bold';

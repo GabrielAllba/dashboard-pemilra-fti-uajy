@@ -1,8 +1,11 @@
+import Navbar from '../Navbar'
+import { Container } from '@mui/material';
+
 export default function Layout(props){
-    return(
-        <div>
-            <p>layout</p>
-            {props.children}
-        </div>
-    )
+    return (
+      <>
+        <Navbar></Navbar>
+        <Container maxWidth="lg">{props.children}</Container>
+      </>
+    );
 }

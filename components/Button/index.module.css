@@ -1,0 +1,8 @@
+.button{
+    background: #ffedda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 3px;
+}

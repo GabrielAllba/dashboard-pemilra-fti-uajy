@@ -25,36 +25,6 @@ export default function Login(){
         <Box sx={{ minWidth: 275 }}>
           <Card variant="outlined">
             <CardContent style={{ padding: "2rem" }}>
-              <div className={classes.image_container}>
-                <Image
-                  className={classes.image + " " +classes.sema}
-                  src="/images/sema.png"
-                  alt="Logo SEMA FTI UAJY"
-                  width={1000}
-                  height={1000}
-                />
-                <Image
-                  className={classes.image}
-                  src="/images/hmti.png"
-                  alt="Logo SEMA FTI UAJY"
-                  width={1000}
-                  height={1000}
-                />
-                <Image
-                  className={classes.image + " " + classes.himaforka}
-                  src="/images/himaforka.png"
-                  alt="Logo SEMA FTI UAJY"
-                  width={1000}
-                  height={1000}
-                />
-                <Image
-                  className={classes.image + " " + classes.himsi}
-                  src="/images/himsi.png"
-                  alt="Logo SEMA FTI UAJY"
-                  width={1000}
-                  height={1000}
-                />
-              </div>
               <p className={classes.welcome_to}>Welcome To</p>
               <h2 className={classes.title}>
                 <Gradient dir="left-to-right" from="#DE631C" to="#E03221">
@@ -62,7 +32,7 @@ export default function Login(){
                 </Gradient>
               </h2>
               <p className={classes.welcome}>
-                Welcome back! Login to access the Dashboard of Pemilra FTI UAJY
+                Welcome back! Login to access the Dashboard of Pemilra FTI UAJY!
               </p>
               <form
                 action="/send-data-here"
@@ -71,29 +41,31 @@ export default function Login(){
               >
                 <div className={classes.form_label}>
                   <label className={classes.label} for="email">
-                    Email
+                    <h2 className={classes.label_inner}>Email</h2>
                   </label>
                   <input
                     className={classes.input}
                     type="text"
                     id="email"
                     name="email"
+                    placeholder="Enter your email"
                   />
                 </div>
                 <div className={classes.form_label}>
                   <label className={classes.label} for="password">
-                    Password
+                    <h2 className={classes.label_inner}>Password</h2>
                   </label>
                   <input
                     className={classes.input}
                     type="password"
                     id="password"
                     name="password"
+                    placeholder="Enter your password"
                   />
                 </div>
                 <div className={classes.form_label}>
                   <button className={classes.submit} type="submit">
-                    Submit
+                    Login
                   </button>
                 </div>
               </form>
