@@ -4,7 +4,7 @@ import classes from './index.module.css'
 
 const Layout = (props) => {
   return (
-    <div style={{ position: "relative" }}>
+    <>
       <MainNavigation />
       <main style={{ position: "relative" }} className={classes.main}>
         <div className={classes.main_content}>
@@ -14,7 +14,7 @@ const Layout = (props) => {
           </div>
         </div>
       </main>
-    </div>
+    </>
   );
 }
 

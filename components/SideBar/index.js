@@ -12,6 +12,7 @@ import { VscOrganization } from "react-icons/vsc";
 import { GiPodiumWinner } from "react-icons/gi";
 import { MdOutlineSafetyDivider } from "react-icons/md";
 import { FaPeopleCarry } from "react-icons/fa";
+import { CiViewTimeline } from "react-icons/ci";
 
 const SideBar = (props) => {
     return (
@@ -41,6 +42,12 @@ const SideBar = (props) => {
                   className={classes.icon}
                 ></AiOutlineDashboard>
                 Dashboard
+              </li>
+            </Link>
+            <Link className={classes.this_link + " link"} href="/">
+              <li className={classes.li}>
+                <CiViewTimeline className={classes.icon}></CiViewTimeline>
+                Timeline
               </li>
             </Link>
             <Link className={classes.this_link + " link"} href="/">

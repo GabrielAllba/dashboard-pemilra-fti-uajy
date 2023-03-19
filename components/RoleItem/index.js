@@ -4,7 +4,7 @@ import ItemList from './ItemList'
 const RoleItem = (props) => {
     return (
       <div style={{display: 'flex', alignItems: 'center'}}>
-        <span style={{marginRight: '.5rem'}}>
+        <span style={{marginRight: '.5rem', fontSize: '1rem'}}>
           <b>{Object.keys(props.access)}</b> 
         </span>
         <div style={{display:'flex'}}>
