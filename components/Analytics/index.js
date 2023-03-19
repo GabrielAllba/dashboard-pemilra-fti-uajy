@@ -1,14 +1,12 @@
-import { FormControl, InputLabel, MenuItem, Select, TableContainer } from '@mui/material';
+import { FormControl, InputLabel, MenuItem, Select} from '@mui/material';
 import classes from './index.module.css'
 import { useState } from 'react';
 
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
-import Button from '../Button';
 import SecondaryButton from '../SecondaryButton';
 import ThirdButton from '../ThirdButton';
 import FourthButton from '../FourthButton';
-import CustomTableContainer from '../CustomTableContainer';
-import ChartContainer from '../ChartContainer';
+
 
 const Analytics = props => {
      const [prodi, setAge] = useState("");

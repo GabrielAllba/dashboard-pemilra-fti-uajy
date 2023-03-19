@@ -1,4 +1,3 @@
-import Button from '../Button'
 import SecondaryButton from '../SecondaryButton'
 import classes from './index.module.css'
 import Link from 'next/link'
