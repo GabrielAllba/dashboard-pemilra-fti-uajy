@@ -70,3 +70,8 @@
     font-family: 'Inter-Regular';
     font-size: 1rem;
 }
+
+.tab_container{
+    width: 100%;
+    overflow: auto;
+}

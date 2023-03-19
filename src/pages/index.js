@@ -16,11 +16,12 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import RoleItem from '../../components/RoleItem';
 import Checkbox from "@mui/material/Checkbox";
-import { FormControl, FormControlLabel, FormGroup, InputLabel, MenuItem, Select } from '@mui/material';
+import { Container, FormControl, FormControlLabel, FormGroup, InputLabel, MenuItem, Select } from '@mui/material';
 import FourthButton from '../../components/FourthButton';
 import Button from '../../components/Button';
 import ThirdButton from '../../components/ThirdButton';
 import SecondaryButton from '../../components/SecondaryButton';
+import CustomTableContainer from '../../components/CustomTableContainer';
 
 const Home = () => {
     const [state, setState] = React.useState({
@@ -101,76 +102,83 @@ const Home = () => {
                 </React.Fragment>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} key="1">
-              <Card variant="outlined">
-                <React.Fragment>
-                  <CardContent>
-                    <h3
-                      className="sub_title_content"
-                      style={{ marginBottom: "1rem" }}
-                    >
-                      Role
-                    </h3>
-
-                    <TableContainer variant="outlined" component={Paper}>
-                      <Table aria-label="simple table">
-                        <TableHead>
-                          <TableRow>
-                            <TableCell>
-                              <b>Role Name</b>
-                            </TableCell>
-                            <TableCell>
-                              <b>Access</b>
-                            </TableCell>
-                            <TableCell>
-                              <b>Action</b>
-                            </TableCell>
-                          </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          {rows.map((row) => (
-                            <TableRow
-                              key={row.roleName}
-                              sx={{
-                                "&:last-child td, &:last-child th": {
-                                  border: 0,
-                                },
-                              }}
-                            >
-                              <TableCell
-                                component="th"
-                                scope="row"
-                                key={row.roleName}
-                              >
-                                {row.roleName}
+            <Grid item xs={12} sm={12} md={4} key="2">
+              <CustomTableContainer>
+                <Card variant="outlined">
+                  <React.Fragment>
+                    <CardContent>
+                      <h3
+                        className="sub_title_content"
+                        style={{ marginBottom: "1rem" }}
+                      >
+                        Role
+                      </h3>
+                      <TableContainer
+                        variant="outlined"
+                        component={Paper}
+                        className={classes.tab_container}
+                      >
+                        <Table
+                          aria-label="simple table"
+                          style={{ overflow: "auto" }}
+                        >
+                          <TableHead>
+                            <TableRow>
+                              <TableCell>
+                                <b>Role Name</b>
                               </TableCell>
                               <TableCell>
-                                {row.access.map((ro) => (
-                                  <RoleItem
-                                    key={row.roleName + "_" + ro}
-                                    access={ro}
-                                  ></RoleItem>
-                                ))}
+                                <b>Access</b>
                               </TableCell>
                               <TableCell>
-                                <div style={{display: 'flex'}}>
-                                  <div style={{margin:'.2rem'}}>
-                                    <ThirdButton>Edit</ThirdButton>
-                                  </div>
-                                  <div style={{margin:'.2rem'}}>
-                                    <SecondaryButton>Del</SecondaryButton>
-                                  </div>
-                                  
-                                </div>
+                                <b>Action</b>
                               </TableCell>
                             </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
-                    </TableContainer>
-                  </CardContent>
-                </React.Fragment>
-              </Card>
+                          </TableHead>
+                          <TableBody>
+                            {rows.map((row) => (
+                              <TableRow
+                                key={row.roleName}
+                                sx={{
+                                  "&:last-child td, &:last-child th": {
+                                    border: 0,
+                                  },
+                                }}
+                              >
+                                <TableCell
+                                  component="th"
+                                  scope="row"
+                                  key={row.roleName}
+                                >
+                                  {row.roleName}
+                                </TableCell>
+                                <TableCell>
+                                  {row.access.map((ro) => (
+                                    <RoleItem
+                                      key={row.roleName + "_" + ro}
+                                      access={ro}
+                                    ></RoleItem>
+                                  ))}
+                                </TableCell>
+                                <TableCell>
+                                  <div style={{ display: "flex" }}>
+                                    <div style={{ margin: ".2rem" }}>
+                                      <ThirdButton>Edit</ThirdButton>
+                                    </div>
+                                    <div style={{ margin: ".2rem" }}>
+                                      <SecondaryButton>Del</SecondaryButton>
+                                    </div>
+                                  </div>
+                                </TableCell>
+                              </TableRow>
+                            ))}
+                          </TableBody>
+                        </Table>
+                      </TableContainer>
+                    </CardContent>
+                  </React.Fragment>
+                </Card>
+              </CustomTableContainer>
             </Grid>
             <Grid item xs={12} sm={12} md={4} key="1">
               <Card variant="outlined">
