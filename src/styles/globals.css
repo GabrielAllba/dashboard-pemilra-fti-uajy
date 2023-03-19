@@ -31,3 +31,12 @@ h1,h2,h3,p{
 .sub_title_content{
   font-family: 'Inter-Bold';
 }
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+th{
+  border: 1px solid #E6EAF5;
+}
+
+tr:nth-child(even){background-color: #f8f8f8}

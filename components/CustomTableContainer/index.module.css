@@ -6,13 +6,13 @@
 }
 @media only screen and (max-width: 425px){
     .container{
-        width: 400px;
+        width: 300px;
         overflow: auto;
     }
 }
 @media only screen and (max-width: 320px){
     .container{
-        max-width: 270px;
+        max-width: 240px;
         overflow: auto;
     }
 }

@@ -87,7 +87,7 @@ const Home = () => {
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            <Grid item xs={12} sm={12} md={6} key="1">
+            <Grid item xs={12} sm={12} md={4} key="1">
               <Card variant="outlined">
                 <React.Fragment>
                   <CardContent>
@@ -105,24 +105,63 @@ const Home = () => {
                 </React.Fragment>
               </Card>
             </Grid>
-            {/* <Grid item xs={12} sm={12} md={3} key="2">
-                <Card variant="outlined">
-                  <React.Fragment>
-                    <CardContent>
-                      <h3
-                        className="sub_title_content"
-                        style={{ marginBottom: "1rem" }}
-                      >
-                        Role
-                      </h3>
-                      <TableContainer
+            <Grid item xs={12} sm={12} md={4} key="2">
+              <React.Fragment>
+                <CardContent>
+                  <CustomTableContainer>
+                    <h3
+                      className="sub_title_content"
+                      style={{ marginBottom: "1rem" }}
+                    >
+                      Role
+                    </h3>
+                    <div style={{ overflowX: "auto" }}>
+                      <table className={classes.table_cont}>
+                        <thead>
+                          <tr>
+                            <th>Role Name</th>
+                            <th>Access</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {rows.map((row) => (
+                            <tr key={row.roleName}>
+                              <td>{row.roleName}</td>
+                              <td>
+                                {row.access.map((ro) => (
+                                  <RoleItem
+                                    key={row.roleName + "_" + ro}
+                                    access={ro}
+                                  ></RoleItem>
+                                ))}
+                              </td>
+                              <td>
+                                <div style={{ display: "flex" }}>
+                                  <div style={{ margin: ".2rem" }}>
+                                    <ThirdButton>Edit</ThirdButton>
+                                  </div>
+                                  <div style={{ margin: ".2rem" }}>
+                                    <SecondaryButton>Del</SecondaryButton>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </CustomTableContainer>
+                  {/* <TableContainer
                         variant="outlined"
                         component={Paper}
                         className={classes.tab_container}
+                        
                       >
                         <Table
                           aria-label="simple table"
-                          style={{ overflow: "auto" }}
+                          
+
                         >
                           <TableHead>
                             <TableRow>
@@ -176,13 +215,11 @@ const Home = () => {
                             ))}
                           </TableBody>
                         </Table>
-                      </TableContainer>
-                    </CardContent>
-                  </React.Fragment>
-                </Card>
-              
-            </Grid> */}
-            <Grid item xs={12} sm={12} md={3} key="3">
+                      </TableContainer> */}
+                </CardContent>
+              </React.Fragment>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4} key="3">
               <Card variant="outlined">
                 <React.Fragment>
                   <CardContent>
