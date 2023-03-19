@@ -3,7 +3,7 @@ import ItemList from './ItemList'
 
 const RoleItem = (props) => {
     return (
-      <div style={{display: 'flex', alignItems: 'center'}}>
+      <div style={{}}>
         <span style={{marginRight: '.5rem', fontSize: '1rem'}}>
           <b>{Object.keys(props.access)}</b> 
         </span>

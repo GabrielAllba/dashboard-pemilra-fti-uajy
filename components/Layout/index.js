@@ -6,7 +6,7 @@ const Layout = (props) => {
   return (
     <>
       <MainNavigation />
-      <main style={{ position: "relative" }} className={classes.main}>
+      <main className={classes.main}>
         <div className={classes.main_content}>
           <SideBar></SideBar>
           <div className={classes.main_main_content}>

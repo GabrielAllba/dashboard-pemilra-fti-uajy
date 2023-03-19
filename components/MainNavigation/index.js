@@ -45,9 +45,7 @@ const MainNavigation = (props) => {
               <p className={classes.role_detail}>Superuser</p>
             </ThirdButton>
           </div>
-          <p className={classes.role}>
-            <span className={classes.email}>superuser@pemilra.uajy.ac.id</span>
-          </p>
+          
           <Avatar sx={{ bgcolor: "#DE631C" }}>N</Avatar>
         </div>
       </div>
