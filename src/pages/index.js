@@ -116,7 +116,7 @@ const Home = () => {
                                   </TableCell>
                                   <TableCell>
                                     {row.access.map((ro) => (
-                                      <RoleItem access={ro}></RoleItem>
+                                      <RoleItem key={row.roleName+'_'+ro} access={ro}></RoleItem>
                                     ))}
                                   </TableCell>
                                 </TableRow>
