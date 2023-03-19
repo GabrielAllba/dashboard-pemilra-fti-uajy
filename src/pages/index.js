@@ -111,7 +111,7 @@ const Home = () => {
                                     },
                                   }}
                                 >
-                                  <TableCell component="th" scope="row">
+                                  <TableCell component="th" scope="row" key={row.roleName}>
                                     {row.roleName}
                                   </TableCell>
                                   <TableCell>
