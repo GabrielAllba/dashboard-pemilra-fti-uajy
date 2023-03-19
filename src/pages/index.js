@@ -22,6 +22,8 @@ import Button from '../../components/Button';
 import ThirdButton from '../../components/ThirdButton';
 import SecondaryButton from '../../components/SecondaryButton';
 import CustomTableContainer from '../../components/CustomTableContainer';
+import Analytics from '../../components/Analytics';
+import ChartContainer from '../../components/ChartContainer';
 
 const Home = () => {
     const [state, setState] = React.useState({
@@ -84,7 +86,7 @@ const Home = () => {
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            <Grid item xs={12} sm={12} md={4} key="1">
+            <Grid item xs={12} sm={12} md={6} key="1">
               <Card variant="outlined">
                 <React.Fragment>
                   <CardContent>
@@ -102,7 +104,7 @@ const Home = () => {
                 </React.Fragment>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} key="2">
+            <Grid item xs={12} sm={12} md={3} key="2">
               <CustomTableContainer>
                 <Card variant="outlined">
                   <React.Fragment>
@@ -180,7 +182,7 @@ const Home = () => {
                 </Card>
               </CustomTableContainer>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} key="1">
+            <Grid item xs={12} sm={12} md={3} key="3">
               <Card variant="outlined">
                 <React.Fragment>
                   <CardContent>
@@ -303,113 +305,16 @@ const Home = () => {
                 </React.Fragment>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={12} md={6} key="1">
-              <Card variant="outlined">
-                <React.Fragment>
-                  <CardContent>
-                    <h3 className="sub_title_content">
-                      Cara menggunakan dashboard ini
-                    </h3>
-                    <p className={classes.sub_title}>
-                      Ikuti langkah berikut untuk dapat menggunakan dashboard
-                      Pemilra FTI UAJY
-                    </p>
-                    <div className={classes.main_content}>
-                      <Timeline></Timeline>
-                    </div>
-                  </CardContent>
-                </React.Fragment>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} key="1">
-              <Card variant="outlined">
-                <React.Fragment>
-                  <CardContent>
-                    <h3 className="sub_title_content">
-                      Cara menggunakan dashboard ini
-                    </h3>
-                    <p className={classes.sub_title}>
-                      Ikuti langkah berikut untuk dapat menggunakan dashboard
-                      Pemilra FTI UAJY
-                    </p>
-                    <div className={classes.main_content}>
-                      <Timeline></Timeline>
-                    </div>
-                  </CardContent>
-                </React.Fragment>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} key="1">
-              <Card variant="outlined">
-                <React.Fragment>
-                  <CardContent>
-                    <h3 className="sub_title_content">
-                      Cara menggunakan dashboard ini
-                    </h3>
-                    <p className={classes.sub_title}>
-                      Ikuti langkah berikut untuk dapat menggunakan dashboard
-                      Pemilra FTI UAJY
-                    </p>
-                    <div className={classes.main_content}>
-                      <Timeline></Timeline>
-                    </div>
-                  </CardContent>
-                </React.Fragment>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} key="1">
-              <Card variant="outlined">
-                <React.Fragment>
-                  <CardContent>
-                    <h3 className="sub_title_content">
-                      Cara menggunakan dashboard ini
-                    </h3>
-                    <p className={classes.sub_title}>
-                      Ikuti langkah berikut untuk dapat menggunakan dashboard
-                      Pemilra FTI UAJY
-                    </p>
-                    <div className={classes.main_content}>
-                      <Timeline></Timeline>
-                    </div>
-                  </CardContent>
-                </React.Fragment>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} key="1">
-              <Card variant="outlined">
-                <React.Fragment>
-                  <CardContent>
-                    <h3 className="sub_title_content">
-                      Cara menggunakan dashboard ini
-                    </h3>
-                    <p className={classes.sub_title}>
-                      Ikuti langkah berikut untuk dapat menggunakan dashboard
-                      Pemilra FTI UAJY
-                    </p>
-                    <div className={classes.main_content}>
-                      <Timeline></Timeline>
-                    </div>
-                  </CardContent>
-                </React.Fragment>
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} key="1">
-              <Card variant="outlined">
-                <React.Fragment>
-                  <CardContent>
-                    <h3 className="sub_title_content">
-                      Cara menggunakan dashboard ini
-                    </h3>
-                    <p className={classes.sub_title}>
-                      Ikuti langkah berikut untuk dapat menggunakan dashboard
-                      Pemilra FTI UAJY
-                    </p>
-                    <div className={classes.main_content}>
-                      <Timeline></Timeline>
-                    </div>
-                  </CardContent>
-                </React.Fragment>
-              </Card>
+            <Grid item xs={12} sm={12} md={6} key="4">
+              <ChartContainer>
+                <Card variant="outlined">
+                  <React.Fragment>
+                    <CardContent>
+                      <Analytics></Analytics>
+                    </CardContent>
+                  </React.Fragment>
+                </Card>
+              </ChartContainer>
             </Grid>
           </Grid>
         </Box>
