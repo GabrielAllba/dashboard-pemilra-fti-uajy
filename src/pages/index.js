@@ -24,6 +24,7 @@ import SecondaryButton from '../../components/SecondaryButton';
 import CustomTableContainer from '../../components/CustomTableContainer';
 import Analytics from '../../components/Analytics';
 import ChartContainer from '../../components/ChartContainer';
+import { ResponsiveContainer } from 'recharts';
 
 const Home = () => {
     const [state, setState] = React.useState({
@@ -104,8 +105,7 @@ const Home = () => {
                 </React.Fragment>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={12} md={3} key="2">
-              <CustomTableContainer>
+            {/* <Grid item xs={12} sm={12} md={3} key="2">
                 <Card variant="outlined">
                   <React.Fragment>
                     <CardContent>
@@ -180,8 +180,8 @@ const Home = () => {
                     </CardContent>
                   </React.Fragment>
                 </Card>
-              </CustomTableContainer>
-            </Grid>
+              
+            </Grid> */}
             <Grid item xs={12} sm={12} md={3} key="3">
               <Card variant="outlined">
                 <React.Fragment>
@@ -306,7 +306,7 @@ const Home = () => {
               </Card>
             </Grid>
             <Grid item xs={12} sm={12} md={6} key="4">
-              <ChartContainer>
+              <ResponsiveContainer>
                 <Card variant="outlined">
                   <React.Fragment>
                     <CardContent>
@@ -314,7 +314,7 @@ const Home = () => {
                     </CardContent>
                   </React.Fragment>
                 </Card>
-              </ChartContainer>
+              </ResponsiveContainer>
             </Grid>
           </Grid>
         </Box>
