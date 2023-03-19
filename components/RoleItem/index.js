@@ -9,7 +9,7 @@ const RoleItem = (props) => {
         </span>
         <div style={{display:'flex'}}>
           {Object.values(props.access).map((l) =>
-            l.map((el) => <ItemList keys={l+'_'+el} name={el}></ItemList>)
+            l.map((el) => <ItemList key={l+'_'+el} name={el}></ItemList>)
           )}
         </div>
       </div>
