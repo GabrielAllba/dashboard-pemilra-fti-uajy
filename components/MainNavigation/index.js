@@ -24,7 +24,9 @@ const MainNavigation = (props) => {
           <div className={classes.role}>
             <Box sx={{ minWidth: 120 }}>
               <FormControl size='small' fullWidth>
-                <InputLabel id="demo-simple-select-label">Periode</InputLabel>
+                <InputLabel id="demo-simple-select-label">
+                  Periode
+                </InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"

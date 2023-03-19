@@ -6,7 +6,7 @@
     background: #fafafa;
     border-bottom: 1px solid rgb(212, 212, 212);
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .main_page_container{
@@ -31,4 +31,7 @@
     font-size: .8rem;
     color: #7683e3;
     font-family: 'Inter-Bold';
+}
+.icon{
+    margin-bottom: .2rem;
 }

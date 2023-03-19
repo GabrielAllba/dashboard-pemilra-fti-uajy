@@ -1,8 +1,49 @@
 import Head from 'next/head'
 import Layout from '../../components/Layout';
-
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Box from "@mui/material/Box";
+import React from 'react';
+import Grid from "@mui/material/Grid";
+import classes from '../styles/Home.module.css'
+import Timeline from '../../components/Timeline';
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+import RoleItem from '../../components/RoleItem';
 
 const Home = () => {
+
+
+  const rows = [
+    {
+      roleName: "admin",
+      access: [
+        {
+          candidate: ["c", "r", "u", "d"],
+        },
+        {
+          kepanitiaan: ["c", "r", "u"],
+        },
+      ],
+    },
+    {
+      roleName: "pengurus_harian",
+      access: [
+        {
+          candidate: ["c", "r", "u", "d"],
+        },
+        {
+          kepanitiaan: ["c", "r"],
+        },
+        
+      ],
+    },
+  ];
   return (
     <>
       <Head>
@@ -12,8 +53,88 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        
-        
+        <Box sx={{ flexGrow: 1 }} style={{ padding: "2rem" }}>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 3 }}
+            columns={{ xs: 4, sm: 8, md: 12 }}
+          >
+            <Grid item xs={12} sm={12} md={6} key="1">
+              <Card variant="outlined">
+                <React.Fragment>
+                  <CardContent>
+                    <h3 className="sub_title_content">
+                      Cara menggunakan dashboard ini
+                    </h3>
+                    <p className={classes.sub_title}>
+                      Ikuti langkah berikut untuk dapat menggunakan dashboard
+                      Pemilra FTI UAJY
+                    </p>
+                    <div className={classes.main_content}>
+                      <Timeline></Timeline>
+                    </div>
+                  </CardContent>
+                </React.Fragment>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} key="1">
+              <Card variant="outlined">
+                <React.Fragment>
+                  <CardContent>
+                    <h3
+                      className="sub_title_content"
+                      style={{ marginBottom: "1rem" }}
+                    >
+                      Role
+                    </h3>
+                    <div style={{ display: "flex" }}>
+                      <div style={{margin: '0 1rem 0 0'}}>
+                        <TableContainer variant='outlined' component={Paper}>
+                          <Table aria-label="simple table">
+                            <TableHead>
+                              <TableRow>
+                                <TableCell>
+                                  <b>Role Name</b>
+                                </TableCell>
+                                <TableCell>
+                                  <b>Access</b>
+                                </TableCell>
+                              </TableRow>
+                            </TableHead>
+                            <TableBody>
+                              {rows.map((row) => (
+                                <TableRow
+                                  key={row.roleName}
+                                  sx={{
+                                    "&:last-child td, &:last-child th": {
+                                      border: 0,
+                                    },
+                                  }}
+                                >
+                                  <TableCell component="th" scope="row">
+                                    {row.roleName}
+                                  </TableCell>
+                                  <TableCell>
+                                    {row.access.map((ro) => (
+                                      <RoleItem access={ro}></RoleItem>
+                                    ))}
+                                  </TableCell>
+                                </TableRow>
+                              ))}
+                            </TableBody>
+                          </Table>
+                        </TableContainer>
+                      </div>
+                      <div>
+                        <form>akdslfj</form>
+                      </div>
+                    </div>
+                  </CardContent>
+                </React.Fragment>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
       </Layout>
     </>
   );
