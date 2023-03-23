@@ -8,9 +8,14 @@ import RoleItem from '../../../components/RoleItem'
 import ThirdButton from '../../../components/ThirdButton'
 import SecondaryButton from '../../../components/SecondaryButton'
 import DataTable from "react-data-table-component";
+import { ResponsiveContainer } from 'recharts'
+import Analytics from '../../../components/Analytics'
+import { useState } from 'react'
+import React, { useEffect } from 'react'
+import ProdiAnalytics from '../../../components/ProdiAnalytics'
 
-import React from 'react'
 const Users = () => {
+  const [data, setData] = useState([])
     const columns = [
       {
         name: "No",
@@ -44,7 +49,7 @@ const Users = () => {
       },
     ];
 
-    const data = [
+    const dataku = [
       {
         id: 1,
         no: 1 ,
@@ -57,11 +62,11 @@ const Users = () => {
       {
         id: 2,
         no: 2 ,
-        nama: "Gabriel Allba",
-        angkatan: "2021",
-        prodi: "Informatika",
-        npm: "210711150",
-        email: "210711150@students.uajy.ac.id",
+        nama: "A",
+        angkatan: "2022",
+        prodi: "A",
+        npm: "A",
+        email: "A@students.uajy.ac.id",
       },
       {
         id: 3,
@@ -155,13 +160,39 @@ const Users = () => {
       },
 
     ];
+
+    useEffect(() => {
+      setData(dataku)
+    },[])
+
     return (
       <Layout>
-        <Box style={{ padding: "1rem" }}>
-          <Card variant='outlined'>
-            <DataTable columns={columns} data={data} />
-          </Card>
-        </Box>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={8} key="1">
+            <div className="box_custom">
+              <h2 style={{ margin: "1rem 0" }}>Informatika</h2>
+
+              <DataTable pagination columns={columns} data={data} />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={12} md={4} key="4">
+            
+              <ProdiAnalytics></ProdiAnalytics>
+            
+          </Grid>
+          <Grid item xs={12} sm={12} md={8} key="1">
+            <div className="box_custom">
+              <h2 style={{ margin: "1rem 0" }}>Teknik Industri</h2>
+
+              <DataTable pagination columns={columns} data={data} />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={12} md={4} key="4">
+            
+                <ProdiAnalytics></ProdiAnalytics>
+            
+          </Grid>
+        </Grid>
       </Layout>
     );
 }
