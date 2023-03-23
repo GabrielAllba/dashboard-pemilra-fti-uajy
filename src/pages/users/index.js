@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Card } from '@mui/material'
 import {Grid} from '@mui/material'
 import classes from './index.module.css'
 import Layout from '../../../components/Layout'
@@ -63,16 +63,104 @@ const Users = () => {
         npm: "210711150",
         email: "210711150@students.uajy.ac.id",
       },
+      {
+        id: 3,
+        no: 3 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 10,
+        no: 10 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 4,
+        no: 4 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 5,
+        no: 5 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 6,
+        no: 6 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 7,
+        no: 7 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 8,
+        no: 8 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 9,
+        no: 9 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 12,
+        no: 12,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
+      {
+        id: 11,
+        no: 11 ,
+        nama: "Gabriel Allba",
+        angkatan: "2021",
+        prodi: "Informatika",
+        npm: "210711150",
+        email: "210711150@students.uajy.ac.id",
+      },
 
     ];
     return (
       <Layout>
         <Box style={{ padding: "1rem" }}>
-          
-                
-                  <DataTable columns={columns} data={data} />
-                
-              
+          <Card variant='outlined'>
+            <DataTable columns={columns} data={data} />
+          </Card>
         </Box>
       </Layout>
     );

@@ -69,7 +69,7 @@ const SideBar = (props) => {
                 Kandidat
               </li>
             </Link>
-            <Link className={classes.this_link + " link"} href="/">
+            <Link className={classes.this_link + " link"} href="/users">
               <li className={classes.li}>
                 <AiOutlineUser className={classes.icon}></AiOutlineUser>
                 Users

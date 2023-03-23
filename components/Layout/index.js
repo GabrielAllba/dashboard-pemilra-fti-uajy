@@ -43,11 +43,21 @@ const Layout = (props) => {
     <>
       <MainNavigation sidebarStatus={showSidebar} handle={handleClick} />
       <main className={classes.main}>
-        <div className={classes.main_content}>
-          {showSidebar ? <SideBar show={showSidebar}></SideBar> : null}
+        {!isMobile && (
+          <div className={classes.main_content}>
+            {showSidebar ? <SideBar show={showSidebar}></SideBar> : null}
 
-          <div className={classes.main_main_content}>{props.children}</div>
-        </div>
+            <div className={classes.main_main_content}>{props.children}</div>
+          </div>
+        )}
+
+        {isMobile && (
+          <div>
+            {showSidebar ? <SideBar show={showSidebar}></SideBar> : null}
+
+            <div className={classes.main_main_content}>{props.children}</div>
+          </div>
+        )}
       </main>
     </>
   );
