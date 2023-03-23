@@ -14,8 +14,10 @@ import { FaPeopleCarry } from "react-icons/fa";
 import { CiViewTimeline } from "react-icons/ci";
 
 const SideBar = (props) => {
+
+  const cssClasses = [props.show ? "ModalOpen" : 'ModalClosed']
     return (
-      <div className={classes.outer}>
+      <div className={classes.outer + ' ' +cssClasses.join(' ')}>
         <div className={classes.inner_ex}>
           <div className={classes.main_page_container}>
             <div className={classes.m_5}>

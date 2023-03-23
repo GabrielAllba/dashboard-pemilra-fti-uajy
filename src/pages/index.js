@@ -280,12 +280,12 @@ const Home = () => {
               </Card>
             </Grid>
 
-            <Grid item xs={12} sm={12} md={6} key="4">
+            <Grid item xs={12} sm={12} md={4} key="4">
               <ResponsiveContainer>
                 <Card variant="outlined">
                   <React.Fragment>
                     <CardContent>
-                      <Analytics></Analytics>
+                      <Analytics organisasi="HIMAFORKA"></Analytics>
                     </CardContent>
                   </React.Fragment>
                 </Card>
@@ -296,12 +296,35 @@ const Home = () => {
                 <Card variant="outlined">
                   <React.Fragment>
                     <CardContent>
-                      <OrganisasiAnalytics></OrganisasiAnalytics>
+                      <Analytics organisasi="SEMA"></Analytics>
                     </CardContent>
                   </React.Fragment>
                 </Card>
               </ResponsiveContainer>
             </Grid>
+            <Grid item xs={12} sm={12} md={4} key="4">
+              <ResponsiveContainer>
+                <Card variant="outlined">
+                  <React.Fragment>
+                    <CardContent>
+                      <Analytics organisasi="HMTI"></Analytics>
+                    </CardContent>
+                  </React.Fragment>
+                </Card>
+              </ResponsiveContainer>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4} key="4">
+              <ResponsiveContainer>
+                <Card variant="outlined">
+                  <React.Fragment>
+                    <CardContent>
+                      <Analytics organisasi="HIMSI"></Analytics>
+                    </CardContent>
+                  </React.Fragment>
+                </Card>
+              </ResponsiveContainer>
+            </Grid>
+            
           </Grid>
         </Box>
       </Layout>

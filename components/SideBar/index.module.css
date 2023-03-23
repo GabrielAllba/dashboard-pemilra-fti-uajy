@@ -13,7 +13,7 @@
 
 @media only screen and (max-width: 768px) {
     .outer{
-        display: none;
+        position: fixed;
     }
 }
 .m_5{
