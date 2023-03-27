@@ -17,35 +17,8 @@ import {
 const ProdiAnalytics = props => {
   const [data, setData] = useState([]);
 
-  const dataku = [
-    {
-      name: "2021",
-      pv: 15,
-    },
-    {
-      name: "2022",
-      pv: 23,
-    },
-    {
-      name: "2023",
-      pv: 58,
-    },
-    {
-      name: "2024",
-      pv: 20,
-    },
-    {
-      name: "2025",
-      pv: 50,
-    },
-    {
-      name: "2026",
-      pv: 20,
-    },
-  ];
-
     useEffect(() => {
-      setData(dataku)
+      setData(props.data)
     }, [])
     return (
       <div style={{ width: "100%", height: 700}}>
