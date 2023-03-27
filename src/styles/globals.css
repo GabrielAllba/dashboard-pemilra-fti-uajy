@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('/fonts/Inter-Bold.ttf');
+}
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('/fonts/Inter-Regular.ttf');
+}
+
+body{
+  font-family: 'Inter-Regular', sans-serif;
+  transition: .5s ease;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+h1,h2,h3,p{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+.main_button{
+  color: #E03221
+}
+
+.link{
+    text-decoration: none;
+}
+.sub_title_content{
+  font-family: 'Inter-Bold';
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+th{
+  border: 1px solid #E6EAF5;
+}
+
+tr:nth-child(even){background-color: #f8f8f8}
+
+.ModalOpen{
+    display: block;
+    animation: openModal 0.4s ease-out forwards;
+}
+
+.ModalClosed{
+
+    animation: closeModal 0.4s ease-out forwards;
+}
+
+@keyframes openModal{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(1%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.ModalClosed{
+    animation: tutup 0.4s ease-out forwards;
+}
+
+
+@keyframes tutup{
+    0%{
+        opacity: 1;
+        transform: translateY(20%);
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(60%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+
+.box_custom{
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(219, 219, 219);
+}

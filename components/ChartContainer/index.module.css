@@ -1,0 +1,26 @@
+@media only screen and (max-width: 768px){
+    .container{
+        width:100%;
+        overflow: auto;
+    }
+}
+@media only screen and (max-width: 425px){
+    .container{
+        width: 350px;
+        overflow: auto;
+    }
+}
+@media only screen and (max-width: 320px){
+    .container{
+        max-width: 270px;
+        overflow: auto;
+    }
+}
+
+
+
+
+
+
+
+

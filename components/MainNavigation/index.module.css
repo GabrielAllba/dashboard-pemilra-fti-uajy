@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    
+    background: #fafafa;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 100%;
+    z-index: 3;
+}
+
+.main_page_container{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.m_5{
+    margin: .5rem;
+}
+
+.h2{
+    font-size: 1rem;
+    font-family: 'Inter-Bold';
+}
+
+.role{
+    padding-right: .5rem;
+    font-family: 'Inter-Regular';
+}
+.role_detail{
+    font-size: .8rem;
+    color: #7683e3;
+    font-family: 'Inter-Bold';
+}
+.icon{
+    margin-bottom: .2rem;
+}
+
+.hamburger{
+    
+    margin: 0 .5rem;
+    background: rgb(240, 240, 240);
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger_bar{
+    padding: .5rem;
+    cursor: pointer;
+}
+
