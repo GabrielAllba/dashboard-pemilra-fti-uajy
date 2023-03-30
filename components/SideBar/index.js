@@ -66,7 +66,13 @@ const SideBar = (props) => {
               </li>
             </Link>
             <Link className={classes.this_link + " link"} href="/">
-              <li className={classes.li}>
+              <li
+                className={
+                  router.pathname === "/periode"
+                    ? classes.active + " " + classes.li
+                    : classes.li
+                }
+              >
                 <AiOutlineCalendar className={classes.icon}></AiOutlineCalendar>
                 Periode
               </li>
