@@ -33,6 +33,8 @@ const Timeline = () => {
           <div className="box_custom">
             <TimelineComp></TimelineComp>
             <TimelineComp></TimelineComp>
+            <TimelineComp></TimelineComp>
+            <TimelineComp></TimelineComp>
           </div>
         </Grid>
         <Grid item xs={12} sm={12} md={6} key="1">

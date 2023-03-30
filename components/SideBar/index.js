@@ -12,12 +12,14 @@ import { GiPodiumWinner } from "react-icons/gi";
 import { MdOutlineSafetyDivider } from "react-icons/md";
 import { FaPeopleCarry } from "react-icons/fa";
 import { CiViewTimeline } from "react-icons/ci";
+import { useRouter } from "next/router";
 
 const SideBar = (props) => {
+  const router = useRouter()
 
   const cssClasses = [props.show ? "ModalOpen" : 'ModalClosed']
     return (
-      <div className={classes.outer + ' ' +cssClasses.join(' ')}>
+      <div className={classes.outer + " " + cssClasses.join(" ")}>
         <div className={classes.inner_ex}>
           <div className={classes.main_page_container}>
             <div className={classes.m_5}>
@@ -38,7 +40,13 @@ const SideBar = (props) => {
           <p className={classes.content_name}>Konten</p>
           <ul className={classes.ul}>
             <Link className={classes.this_link + " link "} href="/">
-              <li className={classes.active + " " + classes.li}>
+              <li
+                className={
+                  router.pathname === "/"
+                    ? classes.active + " " + classes.li
+                    : classes.li
+                }
+              >
                 <AiOutlineDashboard
                   className={classes.icon}
                 ></AiOutlineDashboard>
@@ -46,7 +54,13 @@ const SideBar = (props) => {
               </li>
             </Link>
             <Link className={classes.this_link + " link"} href="/timeline">
-              <li className={classes.li}>
+              <li
+                className={
+                  router.pathname === "/timeline"
+                    ? classes.active + " " + classes.li
+                    : classes.li
+                }
+              >
                 <CiViewTimeline className={classes.icon}></CiViewTimeline>
                 Timeline
               </li>
@@ -70,7 +84,13 @@ const SideBar = (props) => {
               </li>
             </Link>
             <Link className={classes.this_link + " link"} href="/users">
-              <li className={classes.li}>
+              <li
+                className={
+                  router.pathname === "/users"
+                    ? classes.active + " " + classes.li
+                    : classes.li
+                }
+              >
                 <AiOutlineUser className={classes.icon}></AiOutlineUser>
                 Users
               </li>

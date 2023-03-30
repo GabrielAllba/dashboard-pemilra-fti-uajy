@@ -31,3 +31,9 @@
     transform: translate(-50%,-50%);
 
 }
+
+.showdescription{
+    margin: .5rem 0;
+    display: flex;
+    cursor: pointer;
+}
