@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import React from 'react';
 import Grid from "@mui/material/Grid";
 import classes from '../styles/Home.module.css'
-import Timeline from '../../components/Timeline';
+import HowToUse from '../../components/HowToUse';
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -41,7 +41,7 @@ const Home = () => {
       });
     };
 
-    const { gilad, jason, antoine } = state;
+  const { gilad, jason, antoine } = state;
   const [age, setAge] = React.useState("");
 
   const handleChange = (event) => {
@@ -100,7 +100,7 @@ const Home = () => {
                       Pemilra FTI UAJY
                     </p>
                     <div className={classes.main_content}>
-                      <Timeline></Timeline>
+                      <HowToUse></HowToUse>
                     </div>
                   </CardContent>
                 </React.Fragment>

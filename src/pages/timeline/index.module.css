@@ -1,0 +1,85 @@
+.sub_title{
+    padding: .5rem 0;
+    color: grey;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_label{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+.label{
+    margin: .5rem 0;
+}
+.label_inner{
+    font-size: 1rem;
+    font-family: 'Inter-Bold';
+}
+.input{
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(207, 207, 207);
+    height: 1.5rem;
+    padding: .5rem;
+}
+
+.submit{
+    background: #E03221;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    padding: .8rem .5rem;
+    border-radius: 3px;
+    margin-top: 2rem;
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 2px 16px 4px;
+}
+.title{
+    font-family: 'Inter-Bold';
+    margin: .5rem 0;
+}
+
+.welcome{
+    color: grey;
+    padding-bottom: 2rem;
+}
+
+.welcome_to{
+    color: grey;
+}
+.image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.image{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.edit, .delete{
+    font-size: .8rem;
+    font-family: 'Inter-Regular';
+}
+.main_font{
+    font-family: 'Inter-Regular';
+    font-size: 1rem;
+}
+
+.tab_container{
+    width: 100%;
+    overflow: auto;
+}
+
+.textarea{
+    resize: none;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(207, 207, 207);
+    padding: .5rem;
+}

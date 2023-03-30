@@ -10,7 +10,7 @@ const Timeline = (props) => {
             </div>
           </div>
           <div className={classes.description}>
-            <h4 className={classes.title}>Tentukan periode</h4>
+            <h4 className={classes.title}>Tentukan adsf</h4>
             <p className={classes.desc}>
               Untuk menentukan periode, kamu dapat mengakses menu periode yang
               berada di dalam submenu konten

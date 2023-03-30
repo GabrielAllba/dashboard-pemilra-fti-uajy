@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    position: relative;
+
+}
+.kiri{
+    position: relative;
+    padding: 1rem;
+}
+.kanan{
+    padding: 1rem;
+}
+.bulat{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: orange;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.garis{
+    position: absolute;
+    width: .4rem;
+    height: 100%;
+    background-color: orange;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}

@@ -221,7 +221,7 @@ const Users = () => {
               </Grid>
               <Grid item xs={12} sm={12} md={8} key="1">
                 <div className="box_custom">
-                  <h2 style={{ margin: "1rem 0" }}>Teknik Industriiii</h2>
+                  <h2 style={{ margin: "1rem 0" }}>Teknik Industri</h2>
 
                   <DataTable pagination columns={columns} data={dataTekdusVoter} />
                 </div>

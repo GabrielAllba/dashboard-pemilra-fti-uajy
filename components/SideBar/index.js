@@ -45,7 +45,7 @@ const SideBar = (props) => {
                 Dashboard
               </li>
             </Link>
-            <Link className={classes.this_link + " link"} href="/">
+            <Link className={classes.this_link + " link"} href="/timeline">
               <li className={classes.li}>
                 <CiViewTimeline className={classes.icon}></CiViewTimeline>
                 Timeline
