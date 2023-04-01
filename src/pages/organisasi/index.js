@@ -4,9 +4,11 @@ import DataTable from "react-data-table-component";
 import { useState } from "react";
 import React, { useEffect } from "react";
 import FourthButton from "../../../components/FourthButton";
-import classes from './index.module.css'
-
-const Periode = () => {
+import classes from "./index.module.css";
+import { Box } from "@mui/material";
+import {FormControl, InputLabel, Select} from "@mui/material";
+import {MenuItem} from "@mui/material";
+const Organisasi = () => {
   const [periode, setPeriode] = useState([]);
   const columns = [
     {
@@ -18,7 +20,7 @@ const Periode = () => {
       name: "Periode",
       selector: (row) => row.periode,
       sortable: true,
-      cell: (row) => <p style={{fontWeight: 'bold'}}>{row.periode}</p>,
+      cell: (row) => <p style={{ fontWeight: "bold" }}>{row.periode}</p>,
     },
     {
       name: "Organisasi",
@@ -51,23 +53,27 @@ const Periode = () => {
     },
   ];
 
-
   useEffect(() => {
     setPeriode(dataperiode);
   }, []);
 
-  
+   const [age, setAge] = React.useState("");
+
+   const handleChange = (event) => {
+     setAge(event.target.value);
+   };
+
   return (
     <Layout>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={12} key="1">
           <div className="box_custom">
-            <h2>Periode</h2>
+            <h2>Organisasi</h2>
           </div>
         </Grid>
         <Grid item xs={12} sm={12} md={6} key="1">
           <div className="box_custom">
-            <h2 style={{ margin: "1rem 0" }}>Periode</h2>
+            <h2 style={{ margin: "1rem 0" }}>Organisasi</h2>
             <DataTable pagination columns={columns} data={periode} />
           </div>
         </Grid>
@@ -78,21 +84,36 @@ const Periode = () => {
               method="post"
               className={classes.form}
             >
+              <label className={classes.label} htmlFor="sdfd">
+                <h2 className={classes.label_inner}>Organisasi</h2>
+              </label>
+              <Box sx={{ minWidth: 120 }}>
+                <FormControl size="small" fullWidth>
+                  <InputLabel id="demo-simple-select-label">Periode</InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={age}
+                    label="Periode"
+                    onChange={handleChange}
+                  >
+                    <MenuItem value={2022}>2022</MenuItem>
+                    <MenuItem value={2023}>2023</MenuItem>
+                  </Select>
+                </FormControl>
+              </Box>
               <div className={classes.form_label}>
-                <label className={classes.label} htmlFor="periode">
-                  <h2 className={classes.label_inner}>Periode</h2>
-                </label>
                 <input
                   className={classes.input}
                   type="text"
-                  id="periode"
-                  name="periode"
-                  placeholder="Contoh : 2021/2022"
+                  id="nama_organisasi"
+                  name="nama_organisasi"
+                  placeholder="Nama organisasi"
                 />
               </div>
               <div className={classes.form_label}>
                 <button className={classes.submit} type="submit">
-                  Submit
+                  Add
                 </button>
               </div>
             </form>
@@ -103,4 +124,4 @@ const Periode = () => {
   );
 };
 
-export default Periode;
+export default Organisasi;

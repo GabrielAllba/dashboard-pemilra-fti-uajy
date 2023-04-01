@@ -53,6 +53,18 @@ const SideBar = (props) => {
                 Dashboard
               </li>
             </Link>
+            <Link className={classes.this_link + " link"} href="/periode">
+              <li
+                className={
+                  router.pathname === "/periode"
+                    ? classes.active + " " + classes.li
+                    : classes.li
+                }
+              >
+                <AiOutlineCalendar className={classes.icon}></AiOutlineCalendar>
+                Periode
+              </li>
+            </Link>
             <Link className={classes.this_link + " link"} href="/timeline">
               <li
                 className={
@@ -65,26 +77,26 @@ const SideBar = (props) => {
                 Timeline
               </li>
             </Link>
-            <Link className={classes.this_link + " link"} href="/">
+            <Link className={classes.this_link + " link"} href="/organisasi">
               <li
                 className={
-                  router.pathname === "/periode"
+                  router.pathname === "/organisasi"
                     ? classes.active + " " + classes.li
                     : classes.li
                 }
               >
-                <AiOutlineCalendar className={classes.icon}></AiOutlineCalendar>
-                Periode
-              </li>
-            </Link>
-            <Link className={classes.this_link + " link"} href="/">
-              <li className={classes.li}>
                 <VscOrganization className={classes.icon}></VscOrganization>
                 Organisasi
               </li>
             </Link>
-            <Link className={classes.this_link + " link"} href="/">
-              <li className={classes.li}>
+            <Link className={classes.this_link + " link"} href="/kandidat">
+              <li
+                className={
+                  router.pathname === "/kandidat"
+                    ? classes.active + " " + classes.li
+                    : classes.li
+                }
+              >
                 <GiPodiumWinner className={classes.icon}></GiPodiumWinner>
                 Kandidat
               </li>

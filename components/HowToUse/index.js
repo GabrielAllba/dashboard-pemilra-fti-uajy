@@ -1,6 +1,6 @@
 import classes from './index.module.css'
 
-const Timeline = (props) => {
+const HowToUse = (props) => {
     return (
       <div className={classes.out_outer}>
         <div className={classes.outer}>
@@ -63,4 +63,4 @@ const Timeline = (props) => {
     );
 }
 
-export default Timeline
+export default HowToUse

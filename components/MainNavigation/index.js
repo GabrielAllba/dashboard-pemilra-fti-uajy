@@ -12,12 +12,6 @@ import { useState, useEffect } from 'react';
 import { RxDotsVertical } from "react-icons/rx";
 
 const MainNavigation = (props) => {
-    const [age, setAge] = React.useState("");
-
-    const handleChange = (event) => {
-      setAge(event.target.value);
-    };
-
     const [isMobile, setIsMobile] = useState(false);
     const [openSidebar, setOpenSidebar] = useState(false)
 
@@ -45,23 +39,6 @@ const MainNavigation = (props) => {
     return (
       <div className={classes.container}>
         <div className={classes.main_page_container}>
-          <div className={classes.role}>
-            <Box sx={{ minWidth: 120 }}>
-              <FormControl size="small" fullWidth>
-                <InputLabel id="demo-simple-select-label">Periode</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={age}
-                  label="Periode"
-                  onChange={handleChange}
-                >
-                  <MenuItem value={2022}>2022</MenuItem>
-                  <MenuItem value={2023}>2023</MenuItem>
-                </Select>
-              </FormControl>
-            </Box>
-          </div>
           <div className={classes.role}>
             <ThirdButton>
               <p className={classes.role_detail}>Superuser</p>

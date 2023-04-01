@@ -13,6 +13,8 @@ import {
 import {Card} from "@mui/material";
 import classes from './index.module.css'
 import {Checkbox} from "@mui/material";
+import { Box } from "@mui/material";
+
 
 const Timeline = () => {
   const [age, setAge] = useState("");
@@ -27,6 +29,25 @@ const Timeline = () => {
         <Grid item xs={12} sm={12} md={12} key="1">
           <div className="box_custom">
             <h2>Timeline</h2>
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} key="1">
+          <div className="box_custom">
+            <Box sx={{ minWidth: 120 }}>
+              <FormControl size="small" fullWidth>
+                <InputLabel id="demo-simple-select-label">Periode</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  label="Periode"
+                  onChange={handleChange}
+                >
+                  <MenuItem value={2022}>2022</MenuItem>
+                  <MenuItem value={2023}>2023</MenuItem>
+                </Select>
+              </FormControl>
+            </Box>
           </div>
         </Grid>
         <Grid item xs={12} sm={12} md={6} key="1">
@@ -61,9 +82,7 @@ const Timeline = () => {
                   <label className={classes.label} htmlFor="deskripsi">
                     <h2 className={classes.label_inner}>Deskripsi</h2>
                   </label>
-                  <textarea className={classes.textarea}>
-                    
-                  </textarea>
+                  <textarea className={classes.textarea}></textarea>
                 </div>
 
                 <div className={classes.form_label}>
