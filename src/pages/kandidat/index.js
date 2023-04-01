@@ -32,11 +32,11 @@ const Kandidat = () => {
         <div style={{ margin: "1rem 0" }}>
           {row.kandidat.map((k, i) => (
             <div key={i} style={{ margin: ".5rem 0" }}>
-              <div style={{ display: "flex" }}>
+              <div style={{ display: "flex", flexWrap: 'wrap', justifyContent: 'center' }}>
                 <FourthButton>
                   <div>{k}</div>
                 </FourthButton>
-                <div style={{display: "flex" }}>
+                <div style={{display: "flex", flexWrap: 'wrap', justifyContent: 'center'}}>
                   <div style={{margin: '0 .5rem'}}>
                     <ThirdButton>
                       <div>edit</div>
